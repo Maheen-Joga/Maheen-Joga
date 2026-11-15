@@ -32,6 +32,22 @@ Deriving the key from the login password is the next change.
 
 <sub>`Python` · `Flask` · `cryptography` · `bcrypt` · `pytest` · `GitHub Actions`</sub>
 
+### [Warehouse Slotting Optimizer](https://github.com/Maheen-Joga/warehouse-slotting-optimizer) · operations research
+
+Models warehouse aisle layouts and calculates pick-walk distances using **return and s-shape
+routing**. Built with Python's standard library — zero external dependencies. Designed to
+compare slotting policies and backtest against demand forecasts.
+
+<sub>`Python` · `algorithms` · `operations research`</sub>
+
+### [WortZug Kit](https://github.com/Maheen-Joga/wortzug-kit) · structured German translation
+
+A Python package that outputs **formal and colloquial** German variants alongside a word-by-word
+lexicon. Strict schema validation ensures every result is machine-parseable. Built for
+integration with LLM providers.
+
+<sub>`Python` · `NLP` · `schema validation`</sub>
+
 ### [B205 Messenger](https://github.com/Maheen-Joga/Message-application) · multi-threaded TCP chat
 
 A client/server messenger on a **custom wire protocol** — an 8-byte length prefix framing a
@@ -80,5 +96,6 @@ Data Cloud** certified, AWS next. German at B1 and climbing.
 
 <sub>
 English · Hindi · Deutsch (B1) &nbsp;•&nbsp;
+<a href="https://maheen-joga.github.io">Portfolio</a> &nbsp;•&nbsp;
 <a href="https://www.linkedin.com/in/maheenjoga">LinkedIn</a>
 </sub>
