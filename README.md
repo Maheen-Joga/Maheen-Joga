@@ -21,14 +21,16 @@ helped.
 
 ## Selected work
 
-### [VaultKey](https://github.com/Maheen-Joga/vaultkey) · zero-knowledge password manager
+### [VaultKey](https://github.com/Maheen-Joga/vaultkey) · encrypted password manager
 
-Vault entries are encrypted with **AES-256-GCM** under a key derived from the user's own
-password via **PBKDF2-HMAC-SHA256** at 600,000 iterations — so the server operator cannot
-decrypt them. A fresh 96-bit IV per record, bcrypt at cost 12 for authentication, and
-scoped queries to close the IDOR path.
+Credentials are stored as **AES-256-GCM** ciphertext with a fresh 96-bit IV per value, and keys
+are derived with **PBKDF2-HMAC-SHA256** at 600,000 iterations. Login passwords use bcrypt at cost 12,
+every query is scoped to the owner, and **CSRF protection** covers every POST. A 22-test suite runs
+in CI, and a [threat model](https://github.com/Maheen-Joga/vaultkey/blob/main/docs/THREAT_MODEL.md)
+states the limit plainly: the key comes from a server secret, so this is not zero-knowledge yet.
+Deriving the key from the login password is the next change.
 
-<sub>`Python` · `Flask` · `cryptography` · `bcrypt`</sub>
+<sub>`Python` · `Flask` · `cryptography` · `bcrypt` · `pytest` · `GitHub Actions`</sub>
 
 ### [B205 Messenger](https://github.com/Maheen-Joga/Message-application) · multi-threaded TCP chat
 
